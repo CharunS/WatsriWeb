@@ -22,7 +22,9 @@
     <link href="Extensions/vendor/bootstrap/css/CustomCss.css" rel="stylesheet">
     <!-- font Awnsome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
 </head>
     <body>
     <!-- Navigation -->
@@ -44,9 +46,9 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                     <a class="dropdown-item" href="page/History.php">ประวัติโรงเรียน</a>
-                    <a class="dropdown-item" href="#">สัญลักษณ์โรงเรียน</a>
-                    <a class="dropdown-item" href="#">วิสัยทัศน์ / ปรัชญา</a>
-                    <a class="dropdown-item" href="#">พันธกิจ / เป้าหมาย</a>
+                    <a class="dropdown-item" href="page/ShcoolLogo.php">สัญลักษณ์โรงเรียน</a>
+                    <a class="dropdown-item" href="page/Vision.php">วิสัยทัศน์ / ปรัชญา</a>
+                    <a class="dropdown-item" href="page/Mission.php">พันธกิจ / เป้าหมาย</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -54,7 +56,7 @@
                     บุคลากร
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                    <a class="dropdown-item" href="#">คณะผู้บริหารและบุคลากร</a>
+                    <a class="dropdown-item" href="page/Staff.php">คณะผู้บริหารและบุคลากร</a>
                     <a class="dropdown-item" href="#">กลุ่มสาระฯภาษาไทย</a>
                     <a class="dropdown-item" href="#">กลุ่มสาระฯคณิตศาสตร์</a>
                     <a class="dropdown-item" href="#">กลุ่มสาระฯวิทยาศาสตร์</a>
@@ -97,17 +99,17 @@
           </div>
         </div>
         <!-- Slide 3 - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('Img/IndexSlide/2.png')">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <!-- Slide 4 - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('Img/IndexSlide/3.png')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
-        <!-- Slide 5 - Set the background image for this slide in the line below -->
+        <!-- Slide 4 - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('Img/IndexSlide/4.png')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <!-- Slide 5 - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('Img/IndexSlide/5.png')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
