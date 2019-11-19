@@ -117,6 +117,12 @@
     </div>
     <!-- /.row -->
 
+    <div class="row">
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="../Img/blankPic.png" alt="">
+        </div>        
+    </div>
+
   </div>
   <!-- /.container -->
 
