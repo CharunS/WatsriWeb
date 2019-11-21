@@ -57,19 +57,19 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                     <a class="dropdown-item" href="page/Staff.php">คณะผู้บริหารและบุคลากร</a>
-                    <a class="dropdown-item" href="#">กลุ่มสาระฯภาษาไทย</a>
-                    <a class="dropdown-item" href="#">กลุ่มสาระฯคณิตศาสตร์</a>
-                    <a class="dropdown-item" href="#">กลุ่มสาระฯวิทยาศาสตร์</a>
-                    <a class="dropdown-item" href="#">กลุ่มสาระฯสังคมศึกษาฯ</a>
-                    <a class="dropdown-item" href="#">กลุ่มสาระฯสุขศึกษาฯ</a>
-                    <a class="dropdown-item" href="#">กลุ่มสาระฯศิลปะ</a>
-                    <a class="dropdown-item" href="#">กลุ่มสาระฯการงานอาชีพฯ</a>
-                    <a class="dropdown-item" href="#">กลุ่มสาระฯภาษาต่างประเทศ</a>
-                    <a class="dropdown-item" href="#">ปฐมวัย</a>
+                    <a class="dropdown-item" href="page/LearningAreaofThaiLanguage.php">กลุ่มสาระฯภาษาไทย</a>
+                    <a class="dropdown-item" href="page/LearningAreaofMathematics.php">กลุ่มสาระฯคณิตศาสตร์</a>
+                    <a class="dropdown-item" href="page/LearningAreaofScience.php">กลุ่มสาระฯวิทยาศาสตร์</a>
+                    <a class="dropdown-item" href="page/LearningAreaofSocialStudies.php">กลุ่มสาระฯสังคมศึกษาฯ</a>
+                    <a class="dropdown-item" href="page/LearningAreaofHealthandPhysicalEducation.php">กลุ่มสาระฯสุขศึกษาฯ</a>
+                    <a class="dropdown-item" href="page/LearningAreaofArts.php">กลุ่มสาระฯศิลปะ</a>
+                    <a class="dropdown-item" href="page/LearningAreaofOccupationsandTechnology.php">กลุ่มสาระฯการงานอาชีพฯ</a>
+                    <a class="dropdown-item" href="page/LearningAreaofForeignLanguages.php">กลุ่มสาระฯภาษาต่างประเทศ</a>
+                    <a class="dropdown-item" href="page/KindergartenSection.php">ปฐมวัย</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ปฏิทินกิจกรรม</a>
+                    <a class="nav-link" href="page/Calendar.php">ปฏิทินกิจกรรม</a>
                 </li>
                 </ul>
             </div>
@@ -176,7 +176,7 @@
     <!-- /.row -->
 
     <!-- Portfolio Section -->
-    <h2>ข่าวประชาสัมพันธ์</h2>
+    <h2 style="padding-top: 2%;">ข่าวประชาสัมพันธ์</h2>
     <hr>
     <div class="row">
 
@@ -270,7 +270,7 @@
           <a href="https://www.facebook.com/Watsrisudaram/" target="_blank" class="fa fa-facebook" style="width : 60%;height : 60%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 10px;"></a>
         </div>
         <div class="col-lg-12">			
-          <img src="Img/DocDownload.png" style="width : 60%;height : 60%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 10px;">
+          <a href="page/Document.php"><img src="Img/DocDownload.png" style="width : 60%;height : 60%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 10px;"></a>
         </div>
 
         <div class="col-lg-12">		
