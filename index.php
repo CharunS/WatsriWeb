@@ -127,56 +127,9 @@
 
     <!-- Page Content -->
     <div class="container">
-
-    <!-- <div class="row">
-      <div class="col-lg-2 mb-2" style="margin-top: .5rem!important;padding-right: 0 !important;">
-        <img src="Img/logo.png" width="80%" height="100%">
-      </div>
-      <div class="col-lg-8 mb-8" style="padding-left: 0 !important;">
-        <h1 class="my-4">โรงเรียนวัดศรีสุดาราม</h1>
-      </div>
-    </div> -->
-  
-    <!-- Marketing Icons Section -->
-    <!-- <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- /.row -->
-
+    
     <!-- Portfolio Section -->
-    <h2 style="padding-top: 2%;">ข่าวประชาสัมพันธ์</h2>
+    <h2 style="padding-top: 2%;">โรงเรียนวัดศรีสุดาราม : ข่าวประชาสัมพันธ์</h2>
     <hr>
     <div class="row">
 
@@ -259,6 +212,8 @@
       </div>
     </div>
 
+    <h2 style="padding-top: 2%;">โรงเรียนวัดศรีสุดาราม : แผนที่</h2>
+    <hr>
     <!-- Features Section -->
     <div class="row">
       <div class="col-lg-8">

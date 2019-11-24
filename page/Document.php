@@ -33,6 +33,7 @@
    
         $(document).ready(function() {
             $('#tbDoc').DataTable({
+            "ordering": false,
             "language": {
                 "lengthMenu": "แสดง _MENU_ รายการ ต่อ หน้า",
                 "zeroRecords": "ไม่พบเอกสารดังกล่าว",
