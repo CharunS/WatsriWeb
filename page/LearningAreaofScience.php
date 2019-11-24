@@ -92,9 +92,9 @@
 
     <div class="row">
 
-      <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="col-lg-4 col-sm-4 portfolio-item">
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="col-lg-4 col-sm-4 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="../Img/Nanthida.jpg" alt=""></a>
           <div class="card-body">
@@ -105,16 +105,16 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="col-lg-4 col-sm-4 portfolio-item">
       </div>
       
     </div>
 
     <div class="row">
 
-      <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="col-lg-4 col-sm-4 portfolio-item">
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="col-lg-4 col-sm-4 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="../Img/Thivapon.jpg" alt=""></a>
           <div class="card-body">
@@ -125,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="col-lg-4 col-sm-4 portfolio-item">
       </div>
       
     </div>
