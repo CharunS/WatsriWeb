@@ -158,8 +158,8 @@
   </footer>
           
   <!-- Bootstrap core JavaScript -->
-  <script src="Extensions/vendor/jquery/jquery.min.js"></script>
-  <script src="Extensions/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../Extensions/vendor/jquery/jquery.min.js"></script>
+  <script src="../Extensions/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
