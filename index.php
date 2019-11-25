@@ -94,7 +94,7 @@
           </div>
         </div>
         <!-- Slide 2 - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('Img/IndexSlide/2.png')">
+        <div class="carousel-item" style="background-image: url('Img/IndexSlide/2.jpg')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -135,10 +135,10 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1508715899268993/1508713712602545/?type=3&theater"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <a href="https://web.facebook.com/Watsrisudaram/posts/1508715899268993"><img class="card-img-top" src="img/News/News01.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1508715899268993/1508713712602545/?type=3&theater">กิจกรรมพิธีถวายบังคมพระบรมราชานุสรณ์ รัชกาลที่ 6</a>
+              <a href="https://web.facebook.com/Watsrisudaram/posts/1508715899268993">กิจกรรมพิธีถวายบังคมพระบรมราชานุสรณ์ รัชกาลที่ 6</a>
             </h4>
             <p class="card-text">วันพฤหัสบดีที่ 21 พฤศจิกายน 2562 โรงเรียนวัดศรีสุดาราม จัดกิจกรรมพิธีถวายบังคมพระบรมราชานุสรณ์ รัชกาลที่ 6 โดยมีนายเอกศักดิ์ อินทนะ ผู้อำนวยการเป็นประธานในพิธี....</p>
           </div>
@@ -146,10 +146,10 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1503755646431685/1503753253098591/?type=3&theater"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <a href="https://web.facebook.com/Watsrisudaram/posts/1503755646431685"><img class="card-img-top" src="img/News/News02.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1503755646431685/1503753253098591/?type=3&theater">ประชุมผู้ปกครอง</a>
+              <a href="https://web.facebook.com/Watsrisudaram/posts/1503755646431685">ประชุมผู้ปกครอง</a>
             </h4>
             <p class="card-text">วันอาทิยต์ที่ 17 พฤศจิกายน 2562 โรงเรียนวัดศรีสุดาราม จัดประชุมผู้ปกครอง ภาคเรียนที่ 2 ปีการศึกษา 2562</p>
           </div>
@@ -157,10 +157,10 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1495814427225807/1495812753892641/?type=3&theater"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <a href="https://web.facebook.com/Watsrisudaram/posts/1498716266935623"><img class="card-img-top" src="img/News/News03.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1495814427225807/1495812753892641/?type=3&theater">งานประเพณีอัญเชิญพระบรมสารีริกธาตุ ณ วัดศรีสุดารามวรวิหาร</a>
+              <a href="https://web.facebook.com/Watsrisudaram/posts/1498716266935623">งานประเพณีอัญเชิญพระบรมสารีริกธาตุ ณ วัดศรีสุดารามวรวิหาร</a>
             </h4>
             <p class="card-text">วันเสาร์ที่ ๙ พฤศจิกายน ๒๕๖๒ นายเอกศักดิ์ อินทนะ ผู้อำนวยการ คณะครูและนักเรียนโรงเรียนวัดศรีสุดารามเข้าร่วมงานประเพณีอัญเชิญพระบรมสารีริกธาตุ ณ วัดศรีสุดารามวรวิหารเขตบางกอกน้อย กรุงเทพมหานคร</p>
           </div>
@@ -168,21 +168,10 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1495796657227584/1495795100561073/?type=3&theater"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <a href="https://web.facebook.com/Watsrisudaram/posts/1493851677422082"><img class="card-img-top" src="img/News/News04.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1495796657227584/1495795100561073/?type=3&theater">โครงการศิลปะพัฒนาโรงเรียน</a>
-            </h4>
-            <p class="card-text">วันศุกร์ที่ ๘ พฤศจิกายน ๒๕๖๒ โรงเรียนวัดศรีสุดารามขอขอบคุณ โครงการศิลปะพัฒนาโรงเรียนจากคณะจิตอาสาไทย ที่เข้ามาสร้างสรรค์ผลงานศิลปะบนบริเวณผนังกำแพงของโรงเรียนให้สดใสและเป็นแหล่งเรียนรู้ที่น่าสนใจ</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1493851677422082/1493848847422365/?type=3&theater"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/photos/pcb.1493851677422082/1493848847422365/?type=3&theater">นิทรรศการองค์ความรู้เกี่ยวกับการเสด็จพระราชดำเนินเลียบพระนคร</a>
+              <a href="https://web.facebook.com/Watsrisudaram/posts/1493851677422082">ชมนิทรรศการองค์ความรู้เกี่ยวกับการเสด็จพระราชดำเนินเลียบพระนคร</a>
             </h4>
             <p class="card-text">ในวันพฤหัสบดีที่ 7 พฤศจิกายน 2562 นายเอกศักดิ์ อินทนะ ผู้อำนวยการ พร้อมคณะครู โรงเรียนวัดศรีสุดาราม นำนักเรียนเข้าชมนิทรรศการองค์ความรู้เกี่ยวกับการเสด็จพระราชดำเนินเลียบพระนคร โดยขบวนพยุหยาตราทางชลมารค เนื่องในพระราชพิธีบรมราชาภิเษก พุทธศักราช 2562 เพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว ณ ท้องสนามหลวง</p>
           </div>
@@ -190,12 +179,23 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/photos/ms.c.eJxFVNeNBFEI6~_hEDv03dnqweH4tMMYEthAV0tCmcss~;XsBpANUFOJ3I050IAD~;Aun8pLPJSLPgiSh9QlyLk~;VK4vwgfjvAfUCQpJsx2KTWkTnxAWIpxuSBFNwVKY6pYXQpTTgpBqU0vzNdLiU6KJEhpSePrZZUmqtRWOR1pvQah7Hpq8JTNpiwdaT1L0o3rIrwnRX7tcws~;6d0wSNYxAeDPD6GAH5YL9AE1ZTWubFMOYHplY3RQFVLy6Yj~_UsZkgskt060Kug0b6Xxlm304AqQ7F725cOV4qgnXd~_kSS1crTD9hPe2rX~;utsx~;h0JFrIRmAXCAOqHiept5ack~_E1hcxHNoYg9aMIU9H25a166V9lEojwrd9udmK~_OOIW34RmgMig2OxpPBUeDxVjLJzViooEbHSb7YiNko~;1zNy91QRMRYSOQBdAKS~_pILp19yLJAFYpYT2u8cgxv~_guX2vM1l07jZwL90jTBwrVWNQK06dR5goSJWH9G5faD2tz9N4nlpXI2KWTuApyXIEOHrWoQRKZ0~_t8T8kpxflL2Lnwqiyly3YMfI99QaQM5fSQtn9Y3I6mOehsMo~;jFAfFg~-~-.bps.a.1462317353908848/1462320363908547/?type=3&theater"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1462317353908848"><img class="card-img-top" src="img/News/News05.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/photos/ms.c.eJxFVNeNBFEI6~_hEDv03dnqweH4tMMYEthAV0tCmcss~;XsBpANUFOJ3I050IAD~;Aun8pLPJSLPgiSh9QlyLk~;VK4vwgfjvAfUCQpJsx2KTWkTnxAWIpxuSBFNwVKY6pYXQpTTgpBqU0vzNdLiU6KJEhpSePrZZUmqtRWOR1pvQah7Hpq8JTNpiwdaT1L0o3rIrwnRX7tcws~;6d0wSNYxAeDPD6GAH5YL9AE1ZTWubFMOYHplY3RQFVLy6Yj~_UsZkgskt060Kug0b6Xxlm304AqQ7F725cOV4qgnXd~_kSS1crTD9hPe2rX~;utsx~;h0JFrIRmAXCAOqHiept5ack~_E1hcxHNoYg9aMIU9H25a166V9lEojwrd9udmK~_OOIW34RmgMig2OxpPBUeDxVjLJzViooEbHSb7YiNko~;1zNy91QRMRYSOQBdAKS~_pILp19yLJAFYpYT2u8cgxv~_guX2vM1l07jZwL90jTBwrVWNQK06dR5goSJWH9G5faD2tz9N4nlpXI2KWTuApyXIEOHrWoQRKZ0~_t8T8kpxflL2Lnwqiyly3YMfI99QaQM5fSQtn9Y3I6mOehsMo~;jFAfFg~-~-.bps.a.1462317353908848/1462320363908547/?type=3&theater">กีฬาสีภายใน ประจำปีการศึกษา 2562</a>
+              <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1462317353908848">กีฬาสีภายใน ประจำปีการศึกษา 2562</a>
             </h4>
             <p class="card-text">เมื่อวันศุกร์ ที่ 4 กันยายน 2562 โรงเรียนวัดศรีสุดาราม จัดกีฬาสีภายใน ประจำปีการศึกษา 2562</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1417910718349512"><img class="card-img-top" src="img/News/News06.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1417910718349512">กิจกรรมวันแม่แห่งชาติ</a>
+            </h4>
+            <p class="card-text">เมื่อวันที่ 9 สิงหาคม 2562 โรงเรียนวัดศรีสุดาราม จัดกิจกรรมวันแม่แห่งชาติ โดยมีนายเอกศักดิ์ อินทนะ ผู้อำนวยการ เป็นประธานในพิธี</p>
           </div>
         </div>
       </div>
