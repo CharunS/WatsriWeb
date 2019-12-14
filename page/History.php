@@ -95,7 +95,7 @@
       <!-- Intro Content -->
       <div class="row">
         <div class="col-lg-6">
-          <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+          <img class="img-fluid rounded mb-4" src="../Img/S__65200136.jpg" alt="">
         </div>
         <div class="col-lg-6">
           <h2>โรงเรียนวัดศรีสุดาราม</h2>
@@ -115,32 +115,33 @@
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="card text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+            <img class="card-img-top" src="../Img/S__65200134.jpg" alt="">
             <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
+              <h4 class="card-title">เวทีอเนกประสงค์</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+            <img class="card-img-top" src="../Img/S__65200135.jpg" alt="">
             <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
+              <h4 class="card-title">โรงอาหาร</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+          <img class="card-img-top" src="../Img/S__65200133.jpg" alt="">
+            <!-- <img class="card-img-top" src="http://placehold.it/750x450" alt=""> -->
             <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
+              <h4 class="card-title">หน้าโรงเรียน</h4>
             </div>
           </div>
         </div>
       </div>
       <!-- /.row -->
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-2 col-sm-4 mb-4">
           <img class="img-fluid" src="http://placehold.it/500x300" alt="">
         </div>
@@ -159,7 +160,7 @@
         <div class="col-lg-2 col-sm-4 mb-4">
           <img class="img-fluid" src="http://placehold.it/500x300" alt="">
         </div>
-      </div>
+      </div> -->
       <!-- /.row -->
       
     </div>
