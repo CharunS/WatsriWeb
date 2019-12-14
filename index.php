@@ -135,7 +135,7 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/posts/1508715899268993"><img class="card-img-top" src="img/News/News01.jpg" alt=""></a>
+          <a href="https://web.facebook.com/Watsrisudaram/posts/1508715899268993"><img class="card-img-top" src="Img/News/News01.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="https://web.facebook.com/Watsrisudaram/posts/1508715899268993">กิจกรรมพิธีถวายบังคมพระบรมราชานุสรณ์ รัชกาลที่ 6</a>
@@ -146,7 +146,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/posts/1503755646431685"><img class="card-img-top" src="img/News/News02.jpg" alt=""></a>
+          <a href="https://web.facebook.com/Watsrisudaram/posts/1503755646431685"><img class="card-img-top" src="Img/News/News02.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="https://web.facebook.com/Watsrisudaram/posts/1503755646431685">ประชุมผู้ปกครอง</a>
@@ -157,7 +157,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/posts/1498716266935623"><img class="card-img-top" src="img/News/News03.jpg" alt=""></a>
+          <a href="https://web.facebook.com/Watsrisudaram/posts/1498716266935623"><img class="card-img-top" src="Img/News/News03.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="https://web.facebook.com/Watsrisudaram/posts/1498716266935623">งานประเพณีอัญเชิญพระบรมสารีริกธาตุ ณ วัดศรีสุดารามวรวิหาร</a>
@@ -168,7 +168,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/posts/1493851677422082"><img class="card-img-top" src="img/News/News04.jpg" alt=""></a>
+          <a href="https://web.facebook.com/Watsrisudaram/posts/1493851677422082"><img class="card-img-top" src="Img/News/News04.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="https://web.facebook.com/Watsrisudaram/posts/1493851677422082">ชมนิทรรศการองค์ความรู้เกี่ยวกับการเสด็จพระราชดำเนินเลียบพระนคร</a>
@@ -179,7 +179,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1462317353908848"><img class="card-img-top" src="img/News/News05.jpg" alt=""></a>
+          <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1462317353908848"><img class="card-img-top" src="Img/News/News05.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1462317353908848">กีฬาสีภายใน ประจำปีการศึกษา 2562</a>
@@ -190,7 +190,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1417910718349512"><img class="card-img-top" src="img/News/News06.jpg" alt=""></a>
+          <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1417910718349512"><img class="card-img-top" src="Img/News/News06.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1417910718349512">กิจกรรมวันแม่แห่งชาติ</a>
@@ -218,7 +218,7 @@
     <div class="row">
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <img class="card-img-top" src="img/Paper/paper1.jpg" alt="">
+          <img class="card-img-top" src="Img/Paper/paper1.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">
               <p>วารสารประจำดือน กันยายน</p>
@@ -231,7 +231,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <img class="card-img-top" src="img/Paper/paper2.jpg" alt="">
+          <img class="card-img-top" src="Img/Paper/paper2.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">
               <p>วารสารประจำดือน ตุลาคม</p>
@@ -244,7 +244,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <img class="card-img-top" src="img/Paper/paper3.jpg" alt="">
+          <img class="card-img-top" src="Img/Paper/paper3.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">
               <p>วารสารประจำดือน พฤศจิกายน</p>
