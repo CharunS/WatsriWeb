@@ -212,6 +212,53 @@
       </div>
     </div>
 
+    <h1 class="my-4">วารสารประจำดือน</h1>
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/Paper/paper1.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <p>วารสารประจำดือน กันยายน</p>
+            </h4>
+          </div>
+          <div class="card-footer">
+            <a href="UploadDoc/Sep.pdf" class="btn btn-primary" target="_blank">ดาวน์โหลด</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/Paper/paper2.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <p>วารสารประจำดือน ตุลาคม</p>
+            </h4>
+          </div>
+          <div class="card-footer">
+            <a href="UploadDoc/Oct.pdf" class="btn btn-primary" target="_blank">ดาวน์โหลด</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/Paper/paper3.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <p>วารสารประจำดือน พฤศจิกายน</p>
+            </h4>
+          </div>
+          <div class="card-footer">
+            <a href="UploadDoc/Nov.pdf" class="btn btn-primary" target="_blank">ดาวน์โหลด</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+
     <h2 style="padding-top: 2%;">โรงเรียนวัดศรีสุดาราม : แผนที่</h2>
     <hr>
     <!-- Features Section -->
@@ -262,7 +309,8 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; โรงเรียนวัดศรีสุดาราม ที่อยู่ 54/8 ซอยวัดศรีสุดาราม แขวงบางขุนนนท์ เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.0-2424-0424</p>
+            <p class="m-0 text-center text-white">โรงเรียนวัดศรีสุดาราม ที่อยู่ 54/8 ซอยวัดศรีสุดาราม แขวงบางขุนนนท์ เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.0-2424-0424</p>
+            <p class="m-0 text-center text-white">Copyright &copy;&nbsp;นางสาว ธิดาทิพย์ ทุมวัน ครูผู้ช่วย กลุ่มสาระฯการงานอาชีพฯ</p>
         </div>
         <!-- /.container -->
     </footer>

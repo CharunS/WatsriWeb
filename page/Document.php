@@ -142,6 +142,14 @@
                 <td>วารสาร ประจำเดือนมิถุนายน 2562</td>
                 <td align="center"><a href="../UploadDoc/201906.pdf" target="_blank"><button type="button" class="btn btn-warning" style="float:none!important;display:inline;">ดาวน์โหลด</button></a></td>
             </tr>
+            <tr>
+                <td>วารสาร ประจำเดือนกรกฎาคม 2562</td>
+                <td align="center"><a href="../UploadDoc/Jul.pdf" target="_blank"><button type="button" class="btn btn-warning" style="float:none!important;display:inline;">ดาวน์โหลด</button></a></td>
+            </tr>
+            <tr>
+                <td>วารสาร ประจำเดือนสิงหาคม 2562</td>
+                <td align="center"><a href="../UploadDoc/Aug.pdf" target="_blank"><button type="button" class="btn btn-warning" style="float:none!important;display:inline;">ดาวน์โหลด</button></a></td>
+            </tr>
         </tbody>
     </table>
 
