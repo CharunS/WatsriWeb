@@ -12,7 +12,7 @@
     <title>โรงเรียนวัดศรีสุดาราม - Watsrisudaram Shcool</title>
     
     <!-- Tab icon -->
-    <link rel="icon" href="img/tab_icon.png">
+    <link rel="icon" href="Img/tab_icon.png">
 
     <!-- Bootstrap core CSS -->
     <link href="Extensions/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
