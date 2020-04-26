@@ -71,6 +71,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="page/Calendar.php">ปฏิทินกิจกรรม</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">สำหรับบุคลากร</a>
+                </li>
                 </ul>
             </div>
         </div>
@@ -314,10 +317,122 @@
         </div>
         <!-- /.container -->
     </footer>
-        
+
+    <!-- Modal Login -->
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">เข้าสู่ระบบ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <form>
+          <div class="form-group">
+            <label class="col-form-label">ชื่อผู้ใช้:</label>
+            <input type="text" class="form-control" id="userName">
+            <span style="color: red;" id="errMsgUserName">กรุณากรอกชื่อผู้ใช้</span>
+          </div>
+          <div class="form-group">
+            <label class="col-form-label">รหัสผ่าน:</label>
+            <input type="password" class="form-control" id="passWord">
+            <span style="color: red;" id="errMsgPassword">กรุณากรอกรหัสผ่าน</span>
+          </div>
+          <span style="color: red;" id="errMsgDataInvalid">ชื่อผู้ใช้ หรือ รหัสผ่านไม่ถูกต้อง</span>
+        </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+            <button type="button" class="btn btn-primary" id="btnLogin">เข้าสู่ระบบ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="Extensions/vendor/jquery/jquery.min.js"></script>
     <script src="Extensions/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#errMsgUserName').hide();
+          $('#errMsgPassword').hide();
+          $('#errMsgDataInvalid').hide();
+      });
+
+      $('#btnLogin').click(function() {
+          let userNameObj = $('#userName').val();
+          let passWordObj = $('#passWord').val();
+
+          if (userNameObj == '' && passWordObj == ''){
+            $('#errMsgUserName').show();
+            $('#errMsgPassword').show();
+            $('#userName').focus();
+            return;
+          }
+          else if(userNameObj == ''){
+            $('#errMsgUserName').show();
+            $('#userName').focus();
+            return;
+          }
+          else if(passWordObj == ''){
+            $('#errMsgPassword').show();
+            $('#passWord').focus();
+            return;
+          }
+          else{
+            if (userNameObj.toUpperCase() != 'WATSRI' && passWordObj.toUpperCase() != 'WATSRI'){
+                $('#errMsgDataInvalid').show();
+                $('#userName').focus();
+            }
+            else{
+              sessionStorage.setItem("UserName", "WATSRI");
+              sessionStorage.setItem("PassWord", "WATSRI");
+              window.location = "page/UserMaintenance.php";
+            }
+          }
+      });
+
+      $('#loginModal').on('shown.bs.modal', function () {
+          $('#userName').focus();
+      });
+
+      $('#loginModal').on('hidden.bs.modal', function () {
+          $('#errMsgUserName').hide();
+          $('#errMsgPassword').hide();
+          $('#errMsgDataInvalid').hide();
+          $('#userName').val('');
+          $('#passWord').val('');
+      });
+
+      $('#userName').change(function() {
+        if(!$(this).val() == '' || !$(this).val() == ''){
+          $('#errMsgUserName').hide();
+        }
+      });
+
+      $('#userName').on('keypress',function(e) {
+        if(e.keyCode == 13){
+          $('#btnLogin').trigger('click');
+        }
+      });
+
+      $('#passWord').change(function() {
+        if(!$(this).val() == '' || !$(this).val() == ''){
+          $('#errMsgPassword').hide();
+        }
+      });
+
+      $('#passWord').on('keypress',function(e) {
+        if(e.keyCode == 13){
+          $('#btnLogin').trigger('click');
+        }
+      });
+    </script>
+
 </html>
