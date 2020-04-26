@@ -154,16 +154,16 @@
 
     function CreateFile(){
 
-        console.log('ok');
-        // $.ajax({
-        //     url:"../WebAPI/FileManager.php", //the page containing php script
-        //     type: "post", //request type,
-        //     dataType: 'json',
-        //     data: {registration: "success", name: "xyz", email: "abc@gmail.com"},
-        //     success:function(result){
-        //     console.log(result.abc);
-        //    }
-        //  });
+        //console.log('ok');
+        $.ajax({
+            url:"../WebAPI/FileManager.php", //the page containing php script
+            type: "post", //request type,
+            dataType: 'json',
+            data: {registration: "success", name: "xyz", email: "abc@gmail.com",functionName : 'CraeteFile'},
+            success:function(result){
+            console.log(result.abc);
+           }
+         });
 
     }
 
