@@ -1,22 +1,28 @@
 <?php 
 
-    $regstration = $_POST['registration'];
-    $name= $_POST['name'];
-    $email= $_POST['email'];
+    $actionName = $_POST['ActionName'];
+    $parmArr= $_POST['ParamArr'];
 
-     echo '<pre>'.print_r($regstration,true).'</pre>';
-
-
-    if ($regstration == "success"){
-
-
-        $output['status'] = 'successfuly registered';
-    // some action goes here under php
-    echo json_encode($output);
+    switch ($actionName) {
+        case "CreateFile":
+            CreateFile();
+            break;
     }
 
     function CreateFile(){
-        
+        try{
+            $myfile = fopen("../UserMaintenance/newfile.txt", "w") or die("Unable to open file!");
+            $txt = "John Doe\n";
+            fwrite($myfile, $txt);
+            $txt = "Jane Doe\n";
+            fwrite($myfile, $txt);
+            fclose($myfile);
+            $output['status'] = 'ok';
+        }
+        catch(Exception $e){
+            $output['status'] = 'fail';
+        }
+        echo json_encode($output);
     }
      
 ?>

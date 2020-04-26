@@ -40,6 +40,10 @@
   <link rel="stylesheet" type="text/css" href="../Extensions/select2/css/select2.min.css" />
   <script type="text/javascript" src="../Extensions/select2/js/select2.min.js"></script>
 
+  <!-- Sweet Alert -->
+  <link rel="stylesheet" type="text/css" href="../Extensions/sweetalert/sweetalert.css" />
+  <script type="text/javascript" src="../Extensions/sweetalert/sweetalert.min.js"></script>
+
 </head>
 
 <body>
@@ -159,9 +163,30 @@
             url:"../WebAPI/FileManager.php", //the page containing php script
             type: "post", //request type,
             dataType: 'json',
-            data: {registration: "success", name: "xyz", email: "abc@gmail.com",functionName : 'CraeteFile'},
+            data: {
+                 ActionName: "CreateFile"
+                ,ParamArr: []
+            },
             success:function(result){
-            console.log(result.abc);
+                console.log(result);
+                if (result.status == 'ok'){
+                    swal({
+                        title: "บันทึกข้อมูลสำเร็จ",
+                        type: "success",
+                        showConfirmButton: true,
+                        confirmButtonText: "ตกลง",
+                        confirmButtonColor: "#0417CD"
+                    });    
+                }
+                else{
+                    swal({
+                        title: "ไม่สามารถบันทึกข้อมูลได้",
+                        type: "warning",
+                        showConfirmButton: true,
+                        confirmButtonText: "ตกลง",
+                        confirmButtonColor: "red"
+                    });
+                }
            }
          });
 
