@@ -123,6 +123,10 @@
         if(sessionStorage.getItem("UserName") == null && sessionStorage.getItem("PassWord") == null){
             window.location = "../index.php";
         }
+        else
+        {
+            CheckFile();
+        }
     });
 
     $('#logOut').click(function() {
@@ -131,45 +135,14 @@
     });
 
     $('#saveData').click(function() {
-        let today = new Date();
-        let dd = String(today.getDate()).padStart(2, '0');
-        let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-        let yyyy = today.getFullYear();
-
-        today = mm+dd+yyyy;
-
+        // Test API
         $.ajax({
-            url:'../UserMaintenance/'+today.toString()+'.txt',
-            type:'HEAD',
-            error: function()
-            {
-                //file not exists
-                CreateFile();
-            //    console.log('ok')
-
-            
-            },
-            success: function()
-            {
-                //file exists
-            }
-        });
-    });
-
-    function CreateFile(){
-
-        //console.log('ok');
-        $.ajax({
-            url:"../WebAPI/FileManager.php", //the page containing php script
-            type: "post", //request type,
+            url:"../../TimeSheet/Api/TimeSheet/GetTest", //the page containing php script
+            type: "GET", //request type,
             dataType: 'json',
-            data: {
-                 ActionName: "CreateFile"
-                ,ParamArr: []
-            },
             success:function(result){
                 console.log(result);
-                if (result.status == 'ok'){
+                if (result.Status == 'ok'){
                     swal({
                         title: "บันทึกข้อมูลสำเร็จ",
                         type: "success",
@@ -188,12 +161,38 @@
                     });
                 }
            }
-         });
+        });
+    });
 
+    function CreateFile(){
+        return null;
     }
 
     function InserData(){
         return null;
+    }
+
+    function CheckFile()
+    {
+        // Test API
+        $.ajax({
+            url:"../../TimeSheet/Api/TimeSheet/CheckFile", //the page containing php script
+            type: "GET", //request type,
+            dataType: 'json',
+            success:function(result){
+                console.log(result);
+                if (result.Status != 'ok'){
+                    swal({
+                        title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้า",
+                        type: "warning",
+                        showConfirmButton: true,
+                        confirmButtonText: "ตกลง",
+                        confirmButtonColor: "red"
+                    });   
+                    $('#saveData').css('display','none');
+                }
+           }
+        });
     }
 </script>
 
