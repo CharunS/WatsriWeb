@@ -122,16 +122,13 @@
 <script type="text/javascript">
 
     $(document).ready(function() {
-        Onloading(true);
-        $('#taskContrainer').css('display','none');
-        $('#errMsgUser').css('display','none');
         if(sessionStorage.getItem("UserName") == null && sessionStorage.getItem("PassWord") == null){
             window.location = "../index.php";
-        }
-        else
-        {
-            CheckFile();
-        }
+        } 
+        else{
+            $('#taskContrainer').css('display','none');
+            $('#errMsgUser').css('display','none');    
+        }               
     });
 
     $('#logOut').click(function() {
@@ -146,14 +143,22 @@
             return;
         }
 
+        if($('#textTask').is(":visible")){
+            alert('A');
+        }
+        else if ($('#textTask').is(":hidden")){
+            alert('B');
+        }
+
         let ParmJson = {
             UserID : $('#selUser').val(),
-            Task : $('#textTask').val()
+            Task : $('#textTask').val(),
+            UserName : $('#selUser option:selected').html(),
         }
 
         debugger;
         $.ajax({
-            url:"../../TimeSheet/Api/TimeSheet/TimeInRecord", 
+            url:"../../TimeSheet/Api/TimeSheet/TimeIn", 
             type: "POST",
             data: JSON.stringify(ParmJson),
             dataType: 'json',
@@ -167,7 +172,10 @@
                         showConfirmButton: true,
                         confirmButtonText: "ตกลง",
                         confirmButtonColor: "#0417CD"
-                    });    
+                    },
+                    function(isConfirm) {
+                       location.reload();
+                    });   
                 }
                 else{
                     swal({
@@ -181,47 +189,6 @@
            }
         });
     });
-
-    function CreateFile(){
-        return null;
-    }
-
-    function InserData(){
-        return null;
-    }
-
-    function CheckFile()
-    {
-        // Test API
-        try{
-            $.ajax({
-                url:"../../TimeSheet/Api/TimeSheet/CheckFile", //the page containing php script
-                type: "GET", //request type,
-                dataType: 'json',
-                success:function(result){
-                    if (result.Status != 'ok'){
-                        swal({
-                            title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้า",
-                            type: "warning",
-                            showConfirmButton: true,
-                            confirmButtonText: "ตกลง",
-                            confirmButtonColor: "red"
-                        });   
-                        $('#saveData').css('display','none');
-                        Onloading(false);
-                    }
-                    else{
-                        Onloading(false);
-                    }
-                }
-            });
-        }
-        catch{
-            // not implement
-        }
-        finally{
-        }
-    }
 
     function Onloading(show){
         if (show){
@@ -239,24 +206,34 @@
     }
 
     $('#selUser').change(function (e) { 
-        debugger;
         if($(this).val() == ''){
-            $('#errMsgUser').css('display','none');
-            return;
+           return;            
         }
         else{
             $("body").css("cursor", "wait");
+            $('#errMsgUser').css('display','none');
             $.ajax({
                 type: "GET",
-                url: "../../TimeSheet/Api/TimeSheet/TimeIn?id=001",
+                url: "../../TimeSheet/Api/TimeSheet/TimeCheck?id="+$(this).val(),
                 dataType: "json",
                 success:function(result){
-                    if (result.Status == 'ok'&& result.ReturnMsg == 'false'){
+                    console.log(result);
+                    if (result.Status == 'ok'&& result.ReturnMsg == 'In'){
                         $('#taskContrainer').css('display','none');
                         $("body").css("cursor", "default");
                     }
-                    else{
+                    else if(result.Status == 'ok'&& result.ReturnMsg == 'Out'){
                         $('#taskContrainer').css('display','block');
+                        $("body").css("cursor", "default");
+                    }
+                    else{
+                        swal({
+                            title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้าที่",
+                            type: "warning",
+                            showConfirmButton: true,
+                            confirmButtonText: "ตกลง",
+                            confirmButtonColor: "red"
+                        });
                         $("body").css("cursor", "default");
                     }
                 }
