@@ -33,6 +33,7 @@
       bottom: 0 ;
       width: 100%;      
     }
+
   </style>
 
   <!-- Select 2 -->
@@ -87,6 +88,7 @@
                 <option value="001">นาย เอกศักดิ์ อินทนะ</option>
                 <option value="002">นางสาว ธิดาทิพย์ ทุมวัน</option>
             </select>
+            <span style="color: red;" id="errMsgUser">กรุณาเลือกบุคลากร</span>
             <script type="text/javascript">
                 $("#selUser").select2({
                     allowClear: true,
@@ -95,9 +97,9 @@
                 });
             </script>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">ภาระงาน</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="form-group" id="taskContrainer">
+            <label for="textTask">ภาระงาน</label>
+            <textarea class="form-control" id="textTask" rows="3"></textarea>
         </div>
     </form>
     <button type="button" class="btn btn-primary" style="background-color: #0417CD; width: 100%;" id="saveData">บันทึกข้อมูล</button>
@@ -113,13 +115,16 @@
   </footer>
           
   <!-- Bootstrap core JavaScript -->
-  <script src="../Extensions/vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="../Extensions/vendor/jquery/jquery.min.js"></script> -->
   <script src="../Extensions/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 <script type="text/javascript">
 
     $(document).ready(function() {
+        Onloading(true);
+        $('#taskContrainer').css('display','none');
+        $('#errMsgUser').css('display','none');
         if(sessionStorage.getItem("UserName") == null && sessionStorage.getItem("PassWord") == null){
             window.location = "../index.php";
         }
@@ -135,11 +140,24 @@
     });
 
     $('#saveData').click(function() {
-        // Test API
+
+        if($('#selUser').val() == ''){
+            $('#errMsgUser').css('display','block');
+            return;
+        }
+
+        let ParmJson = {
+            UserID : $('#selUser').val(),
+            Task : $('#textTask').val()
+        }
+
+        debugger;
         $.ajax({
-            url:"../../TimeSheet/Api/TimeSheet/GetTest", //the page containing php script
-            type: "GET", //request type,
+            url:"../../TimeSheet/Api/TimeSheet/TimeInRecord", 
+            type: "POST",
+            data: JSON.stringify(ParmJson),
             dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
             success:function(result){
                 console.log(result);
                 if (result.Status == 'ok'){
@@ -175,25 +193,76 @@
     function CheckFile()
     {
         // Test API
-        $.ajax({
-            url:"../../TimeSheet/Api/TimeSheet/CheckFile", //the page containing php script
-            type: "GET", //request type,
-            dataType: 'json',
-            success:function(result){
-                console.log(result);
-                if (result.Status != 'ok'){
-                    swal({
-                        title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้า",
-                        type: "warning",
-                        showConfirmButton: true,
-                        confirmButtonText: "ตกลง",
-                        confirmButtonColor: "red"
-                    });   
-                    $('#saveData').css('display','none');
+        try{
+            $.ajax({
+                url:"../../TimeSheet/Api/TimeSheet/CheckFile", //the page containing php script
+                type: "GET", //request type,
+                dataType: 'json',
+                success:function(result){
+                    if (result.Status != 'ok'){
+                        swal({
+                            title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้า",
+                            type: "warning",
+                            showConfirmButton: true,
+                            confirmButtonText: "ตกลง",
+                            confirmButtonColor: "red"
+                        });   
+                        $('#saveData').css('display','none');
+                        Onloading(false);
+                    }
+                    else{
+                        Onloading(false);
+                    }
                 }
-           }
-        });
+            });
+        }
+        catch{
+            // not implement
+        }
+        finally{
+        }
     }
+
+    function Onloading(show){
+        if (show){
+            swal({
+                title: 'กรุณารอสักครู่',
+                allowEscapeKey: false,
+                allowOutsideClick: false,  
+                showConfirmButton: false,
+            })
+        }
+        else{
+            swal.close();
+        }
+        
+    }
+
+    $('#selUser').change(function (e) { 
+        debugger;
+        if($(this).val() == ''){
+            $('#errMsgUser').css('display','none');
+            return;
+        }
+        else{
+            $("body").css("cursor", "wait");
+            $.ajax({
+                type: "GET",
+                url: "../../TimeSheet/Api/TimeSheet/TimeIn?id=001",
+                dataType: "json",
+                success:function(result){
+                    if (result.Status == 'ok'&& result.ReturnMsg == 'false'){
+                        $('#taskContrainer').css('display','none');
+                        $("body").css("cursor", "default");
+                    }
+                    else{
+                        $('#taskContrainer').css('display','block');
+                        $("body").css("cursor", "default");
+                    }
+                }
+            });
+        }
+    });
 </script>
 
 </html>
