@@ -100,6 +100,7 @@
         <div class="form-group" id="taskContrainer">
             <label for="textTask">ภาระงาน</label>
             <textarea class="form-control" id="textTask" rows="3"></textarea>
+            <span style="color: red;" id="errMsgTask">กรุณากรอกภาระงาน</span>
         </div>
     </form>
     <button type="button" class="btn btn-primary" style="background-color: #0417CD; width: 100%;" id="saveData">บันทึกข้อมูล</button>
@@ -121,13 +122,16 @@
 </body>
 <script type="text/javascript">
 
+    var isTouch = null;
+
     $(document).ready(function() {
         if(sessionStorage.getItem("UserName") == null && sessionStorage.getItem("PassWord") == null){
             window.location = "../index.php";
         } 
         else{
             $('#taskContrainer').css('display','none');
-            $('#errMsgUser').css('display','none');    
+            $('#errMsgUser').css('display','none');   
+            $('#errMsgTask').css('display','none'); 
         }               
     });
 
@@ -137,57 +141,197 @@
     });
 
     $('#saveData').click(function() {
-
+        isTouch = null;
         if($('#selUser').val() == ''){
             $('#errMsgUser').css('display','block');
             return;
         }
 
         if($('#textTask').is(":visible")){
-            alert('A');
+            if($('#textTask').val() == ''){
+                $('#errMsgTask').css('display','block');
+                $('#textTask').focus();
+                return;
+            }
+            else{
+                $("body").css("cursor", "wait");
+                $('#saveData').css("cursor", "wait");
+                let ParmJson = {
+                    UserID : $('#selUser').val(),
+                    Task : $('#textTask').val(),
+                    UserName : '',
+                }
+                $.ajax({
+                    url:"../../TimeSheet/Api/TimeSheet/TimeOut", 
+                    type: "POST",
+                    data: JSON.stringify(ParmJson),
+                    dataType: 'json',
+                    contentType: 'application/json; charset=utf-8',
+                    success:function(result){                       
+                        if (result.Status == 'ok'){             
+                            $("body").css("cursor", "default");
+                            $('#saveData').css("cursor", "pointer");
+                            swal({
+                                title: "บันทึกข้อมูลสำเร็จ",
+                                type: "success",
+                                showConfirmButton: true,
+                                confirmButtonText: "ตกลง",
+                                confirmButtonColor: "#0417CD"
+                            },
+                            function(isConfirm) {
+                                location.reload();
+                            });   
+                        }
+                        else{
+                            $("body").css("cursor", "default");
+                            $('#saveData').css("cursor", "pointer");
+                            swal({
+                                title: "ไม่สามารถบันทึกข้อมูลได้",
+                                type: "warning",
+                                showConfirmButton: true,
+                                confirmButtonText: "ตกลง",
+                                confirmButtonColor: "red"
+                            });
+                        }
+                    }
+                });
+
+            }
         }
         else if ($('#textTask').is(":hidden")){
-            alert('B');
-        }
+            $("body").css("cursor", "wait");
+            $('#saveData').css("cursor", "wait");
+            let ParmJson = {
+                UserID : $('#selUser').val(),
+                Task : $('#textTask').val(),
+                UserName : $('#selUser option:selected').html(),
+            }
 
-        let ParmJson = {
-            UserID : $('#selUser').val(),
-            Task : $('#textTask').val(),
-            UserName : $('#selUser option:selected').html(),
-        }
+            $.ajax({
+                url:"../../TimeSheet/Api/TimeSheet/TimeIn", 
+                type: "POST",
+                data: JSON.stringify(ParmJson),
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                success:function(result){
+                    if (result.Status == 'ok'){
+                        $("body").css("cursor", "default");
+                        $('#saveData').css("cursor", "pointer");
+                        swal({
+                            title: "บันทึกข้อมูลสำเร็จ",
+                            type: "success",
+                            showConfirmButton: true,
+                            confirmButtonText: "ตกลง",
+                            confirmButtonColor: "#0417CD"
+                        },
+                        function(isConfirm) {
+                            location.reload();
+                        });   
+                    }
+                    else{
+                        $("body").css("cursor", "default");
+                        $('#saveData').css("cursor", "pointer");
+                        swal({
+                            title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้าที่",
+                            type: "warning",
+                            showConfirmButton: true,
+                            confirmButtonText: "ตกลง",
+                            confirmButtonColor: "red"
+                        },
+                        function(isConfirm) {
+                            GoToIndex();
+                        });
+                    }
+                }
+            });
 
-        debugger;
-        $.ajax({
-            url:"../../TimeSheet/Api/TimeSheet/TimeIn", 
-            type: "POST",
-            data: JSON.stringify(ParmJson),
-            dataType: 'json',
-            contentType: 'application/json; charset=utf-8',
-            success:function(result){
-                console.log(result);
-                if (result.Status == 'ok'){
-                    swal({
-                        title: "บันทึกข้อมูลสำเร็จ",
-                        type: "success",
-                        showConfirmButton: true,
-                        confirmButtonText: "ตกลง",
-                        confirmButtonColor: "#0417CD"
-                    },
-                    function(isConfirm) {
-                       location.reload();
-                    });   
+        } 
+    });
+
+    $('#selUser').change(function (e) { 
+        isTouch = null;
+        $('#errMsgTask').css('display','none');
+
+        if($(this).val() == ''){
+            $('#taskContrainer').css('display','none');           
+           return;            
+        }
+        else{
+            $("body").css("cursor", "wait");
+            $('#saveData').css("cursor", "wait");
+            $('#errMsgUser').css('display','none');
+
+            $.ajax({
+                type: "GET",
+                url: "../../TimeSheet/Api/TimeSheet/TimeCheck?id="+$(this).val(),
+                dataType: "json",
+                success:function(result){
+                    if (result.Status == 'ok'&& result.ReturnMsg == 'In'){
+                        $('#taskContrainer').css('display','none');
+                        $("body").css("cursor", "default");
+                        $('#saveData').css("cursor", "pointer");
+                    }
+                    else if(result.Status == 'ok'&& result.ReturnMsg == 'Out'){
+                        $('#taskContrainer').css('display','block');
+                        $("body").css("cursor", "default");
+                        $('#saveData').css("cursor", "pointer");
+                        $('#textTask').focus();
+                    }
+                    else if(result.Status == 'ok' && result.ReturnMsg == 'Complete'){
+                        $("body").css("cursor", "default");
+                        $('#saveData').css("cursor", "pointer");
+                        swal({
+                            title: $('#selUser option:selected').html()+' ลงเวลาออกแล้ว ไม่สามารถบันทึกข้อมูลได้',
+                            type: "warning",
+                            showConfirmButton: true,
+                            confirmButtonText: "ตกลง",
+                            confirmButtonColor: "red"
+                        },
+                        function(isConfirm) {
+                            $('#taskContrainer').css('display','none');
+                            $('#errMsgTask').css('display','none'); 
+                        });
+                    }
+                    else{
+                        $("body").css("cursor", "default");
+                        $('#saveData').css("cursor", "pointer");
+                        swal({
+                            title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้าที่",
+                            type: "warning",
+                            showConfirmButton: true,
+                            confirmButtonText: "ตกลง",
+                            confirmButtonColor: "red"
+                        },
+                        function(isConfirm) {
+                            GoToIndex();
+                        });
+                    }
                 }
-                else{
-                    swal({
-                        title: "ไม่สามารถบันทึกข้อมูลได้",
-                        type: "warning",
-                        showConfirmButton: true,
-                        confirmButtonText: "ตกลง",
-                        confirmButtonColor: "red"
-                    });
-                }
-           }
-        });
+            });
+
+        }
+    });
+   
+    $('#textTask').keyup(function() {
+        if (isTouch == null){
+            if($('#errMsgTask').is(":visible"))
+            {
+                isTouch = true;
+            }
+            if ($('#errMsgTask').is(":hidden"))
+            {
+                isTouch = false;
+            }
+        }
+        
+        if($(this).val() == ''){
+            if(isTouch){
+                $('#errMsgTask').css('display','block');
+            }
+        }
+        else{
+            $('#errMsgTask').css('display','none');
+        }
     });
 
     function Onloading(show){
@@ -202,44 +346,12 @@
         else{
             swal.close();
         }
-        
     }
 
-    $('#selUser').change(function (e) { 
-        if($(this).val() == ''){
-           return;            
-        }
-        else{
-            $("body").css("cursor", "wait");
-            $('#errMsgUser').css('display','none');
-            $.ajax({
-                type: "GET",
-                url: "../../TimeSheet/Api/TimeSheet/TimeCheck?id="+$(this).val(),
-                dataType: "json",
-                success:function(result){
-                    console.log(result);
-                    if (result.Status == 'ok'&& result.ReturnMsg == 'In'){
-                        $('#taskContrainer').css('display','none');
-                        $("body").css("cursor", "default");
-                    }
-                    else if(result.Status == 'ok'&& result.ReturnMsg == 'Out'){
-                        $('#taskContrainer').css('display','block');
-                        $("body").css("cursor", "default");
-                    }
-                    else{
-                        swal({
-                            title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้าที่",
-                            type: "warning",
-                            showConfirmButton: true,
-                            confirmButtonText: "ตกลง",
-                            confirmButtonColor: "red"
-                        });
-                        $("body").css("cursor", "default");
-                    }
-                }
-            });
-        }
-    });
+    function GoToIndex(){
+        sessionStorage.clear();
+        window.location = "../index.php";
+    }
 </script>
 
 </html>
