@@ -131,10 +131,6 @@
         </thead>
         <tbody>
             <tr>
-                <td>รายงานประจำปีของสถานศึกษา(SAR) ปี 2561</td>
-                <td align="center"><a href="../UploadDoc/SAR.pdf" target="_blank"><button type="button" class="btn btn-warning" style="float:none!important;display:inline;">ดาวน์โหลด</button></a></td>
-            </tr>
-            <tr>
                 <td>วารสาร ประจำเดือนพฤษภาคม 2562</td>
                 <td align="center"><a href="../UploadDoc/201905.pdf" target="_blank"><button type="button" class="btn btn-warning" style="float:none!important;display:inline;">ดาวน์โหลด</button></a></td>
             </tr>

@@ -135,40 +135,6 @@
     <h2 style="padding-top: 2%;">โรงเรียนวัดศรีสุดาราม : ข่าวประชาสัมพันธ์</h2>
     <hr>
     <div class="row">
-
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/posts/1508715899268993"><img class="card-img-top" src="Img/News/News01.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/posts/1508715899268993">กิจกรรมพิธีถวายบังคมพระบรมราชานุสรณ์ รัชกาลที่ 6</a>
-            </h4>
-            <p class="card-text">วันพฤหัสบดีที่ 21 พฤศจิกายน 2562 โรงเรียนวัดศรีสุดาราม จัดกิจกรรมพิธีถวายบังคมพระบรมราชานุสรณ์ รัชกาลที่ 6 โดยมีนายเอกศักดิ์ อินทนะ ผู้อำนวยการเป็นประธานในพิธี....</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/posts/1503755646431685"><img class="card-img-top" src="Img/News/News02.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/posts/1503755646431685">ประชุมผู้ปกครอง</a>
-            </h4>
-            <p class="card-text">วันอาทิยต์ที่ 17 พฤศจิกายน 2562 โรงเรียนวัดศรีสุดาราม จัดประชุมผู้ปกครอง ภาคเรียนที่ 2 ปีการศึกษา 2562</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://web.facebook.com/Watsrisudaram/posts/1498716266935623"><img class="card-img-top" src="Img/News/News03.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://web.facebook.com/Watsrisudaram/posts/1498716266935623">งานประเพณีอัญเชิญพระบรมสารีริกธาตุ ณ วัดศรีสุดารามวรวิหาร</a>
-            </h4>
-            <p class="card-text">วันเสาร์ที่ ๙ พฤศจิกายน ๒๕๖๒ นายเอกศักดิ์ อินทนะ ผู้อำนวยการ คณะครูและนักเรียนโรงเรียนวัดศรีสุดารามเข้าร่วมงานประเพณีอัญเชิญพระบรมสารีริกธาตุ ณ วัดศรีสุดารามวรวิหารเขตบางกอกน้อย กรุงเทพมหานคร</p>
-          </div>
-        </div>
-      </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="https://web.facebook.com/Watsrisudaram/posts/1493851677422082"><img class="card-img-top" src="Img/News/News04.jpg" alt=""></a>
@@ -193,12 +159,12 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1417910718349512"><img class="card-img-top" src="Img/News/News06.jpg" alt=""></a>
+          <a href="https://forms.gle/8JPcVWkNvbR12NBv7"><img class="card-img-top" src="Img/News/News07.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="https://web.facebook.com/pg/Watsrisudaram/photos/?tab=album&album_id=1417910718349512">กิจกรรมวันแม่แห่งชาติ</a>
+              <a href="https://forms.gle/8JPcVWkNvbR12NBv7">คลิกที่นี่เพื่อสมัครเรียนออนไลน์</a>
             </h4>
-            <p class="card-text">เมื่อวันที่ 9 สิงหาคม 2562 โรงเรียนวัดศรีสุดาราม จัดกิจกรรมวันแม่แห่งชาติ โดยมีนายเอกศักดิ์ อินทนะ ผู้อำนวยการ เป็นประธานในพิธี</p>
+            <p class="card-text">นักเรียนสามารถยื่นความประสงค์ในการมัครเข้าเรียนประจำปีการศึกษา 2563 ผู้ปกครองสามารถนำหลักฐานการสมัครมายื่นในภายหลังได้ในวันเปิดภาคเรียน</p>
           </div>
         </div>
       </div>
@@ -242,19 +208,6 @@
           </div>
           <div class="card-footer">
             <a href="UploadDoc/Oct.pdf" class="btn btn-primary" target="_blank">ดาวน์โหลด</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <img class="card-img-top" src="Img/Paper/paper3.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">
-              <p>วารสารประจำดือน พฤศจิกายน</p>
-            </h4>
-          </div>
-          <div class="card-footer">
-            <a href="UploadDoc/Nov.pdf" class="btn btn-primary" target="_blank">ดาวน์โหลด</a>
           </div>
         </div>
       </div>

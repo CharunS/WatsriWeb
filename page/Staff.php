@@ -210,52 +210,58 @@
           <img src="../Img/Wiparud.jpg" alt="Avatar" style="width:100%;height: 100%">
           <div style="padding: 2px 0px;text-align: center;">
             <b style="font-size:11px">นางสาววิภารัตน์ เหลื่อมทองหลาง</b>
-            <p style="font-size:13px">ครู รับเงินเดือนอันดับ ครู คศ.๑</p> 
+            <p style="font-size:13px">ครู รับเงินเดือนอันดับ คศ.๑</p> 
           </div>
         </div>
       </div>
         
     </div>
 	
-    <!-- Img line -->
-		<div class="row" style="margin-top: 5%">         
-            
-      <div class="col-sm-2 col-md-2 col-lg-2 div-top">          
-      </div>
-      <div class="col-sm-1 col-md-1 col-lg-1 div-top">  
-      </div>
+    <!-- Img line. -->
+		<div class="row" style="margin-top: 5%">     
 
       <div class="col-sm-2 col-md-2 col-lg-2 div-top">          
         <div class="card" style = "align:center;">
-            <img src="../Img/Thidatip.jpg" alt="Avatar" style="width:100%;height: 100%">
-            <div style="padding: 2px 0px;text-align: center;">
-              <b style="font-size:13px">นางสาวธิดาทิพย์ ทุมวัน</b>
-              <p style="font-size:13px">ครู รับเงินเดือนอันดับ ครูผู้ช่วย</p> 
-            </div>
-        </div>
-      </div>
-
-			<div class="col-sm-1 col-md-1 col-lg-1 div-top">  
-			</div>
-			<div class="col-sm-1 col-md-1 col-lg-1 div-top">  
-			</div>
-
-			<div class="col-sm-2 col-md-2 col-lg-2 div-top">          
-        <div class="card" style = "align:center;">
-          <img src="../Img/Thivapon.jpg" alt="Avatar" style="width:100%;height: 100%">
+          <img src="../Img/Thidatip.jpg" alt="Avatar" style="width:100%;height: 100%">  
           <div style="padding: 2px 0px;text-align: center;">
-            <b style="font-size:12px">นางสาวทิวาภรณ์ อักษรพิมพ์</b>
-            <p style="font-size:13px">ครู รับเงินเดือนอันดับ ครูผู้ช่วย</p> 
+              <b style="font-size:13px">นางสาวธิดาทิพย์ ทุมวัน</b>
+              <p style="font-size:13px">ครู รับเงินเดือนอันดับ คศ.๑</p> 
           </div>
         </div>
       </div>
 
-			<div class="col-sm-1 col-md-1 col-lg-1 div-top">  
-			</div>
-			<div class="col-sm-2 col-md-2 col-lg-2 div-top">           
+      <div class="col-sm-1 col-md-1 col-lg-1 div-top">  
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2 div-top">            
       </div>
 
-    </div>
+      <div class="col-sm-2 col-md-2 col-lg-2 div-top">          
+        <div class="card" style = "align:center;">
+          <img src="../Img/Thivapon.jpg" alt="Avatar" style="width:100%;height: 100%">
+          <div style="padding: 2px 0px;text-align: center;">
+            <b style="font-size:12px">นางสาวทิวาภรณ์ อักษรพิมพ์</b>
+            <p style="font-size:13px">ครู รับเงินเดือนอันดับ <br>ครูผู้ช่วย</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 col-md-1 col-lg-1 div-top">  
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2 div-top">            
+      </div>
+
+
+      <div class="col-sm-2 col-md-2 col-lg-2 div-top">          
+        <div class="card" style = "align:center;">
+          <img src="../Img/Phajittha.jpg" alt="Avatar" style="width:100%;height: 100%">
+          <div style="padding: 2px 0px;text-align: center;">
+              <b style="font-size:12px">นางสาวภัทร์ฐิตา จะรา</b>
+              <p style="font-size:14px">ครู รับเงินเดือนอันดับ <br>ครูผู้ช่วย</p> 
+          </div>
+        </div>
+      </div>    
+            
+      </div>
 
     <!-- Img line -->
 		<div class="row" style="margin-top: 5%">
@@ -317,20 +323,20 @@
     <!-- Img line. -->
 		<div class="row" style="margin-top: 5%">     
 
-    <div class="col-sm-2 col-md-2 col-lg-2 div-top">          
-      <div class="card" style = "align:center;">
-        <img src="../Img/Wanpen.jpg" alt="Avatar" style="width:100%;height: 100%">
-        <div style="padding: 2px 0px;text-align: center;">
-          <b style="font-size:13px">นางวันเพ็ญ ลำจวนจิตร</b>
-          <p style="font-size:14px">พนักงานสถานที่ บ.๑</p> 
+      <div class="col-sm-2 col-md-2 col-lg-2 div-top">          
+        <div class="card" style = "align:center;">
+          <img src="../Img/Wanpen.jpg" alt="Avatar" style="width:100%;height: 100%">
+          <div style="padding: 2px 0px;text-align: center;">
+            <b style="font-size:13px">นางวันเพ็ญ ลำจวนจิตร</b>
+            <p style="font-size:14px">พนักงานสถานที่ บ.๑</p> 
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-sm-1 col-md-1 col-lg-1 div-top">  
-    </div>
-    <div class="col-sm-2 col-md-2 col-lg-2 div-top">            
-    </div>
+      <div class="col-sm-1 col-md-1 col-lg-1 div-top">  
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2 div-top">            
+      </div>
 			
       <div class="col-sm-2 col-md-2 col-lg-2 div-top">          
         <div class="card" style = "align:center;">
