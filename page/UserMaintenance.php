@@ -74,10 +74,13 @@
     <h1 class="mt-4 mb-3">ลงเวลา เข้า - ออก</h1>
 
     <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="../index.php">หน้าแรก</a>
-      </li>
-      <li class="breadcrumb-item active">ลงเวลา เข้า - ออก</li>
+        <li class="breadcrumb-item">
+            <a href="../index.php">หน้าแรก</a>
+        </li>
+        <li class="breadcrumb-item active">ลงเวลา เข้า - ออก</li>
+        <li class="breadcrumb-item">
+            <a href="#" data-toggle="modal" data-target="#exportExcel">Export Excel</a>
+        </li>
     </ol>
 
     <form>
@@ -101,7 +104,7 @@
             <label for="textTask">ภาระงาน</label>
             <textarea class="form-control" id="textTask" rows="3"></textarea>
             <span style="color: red;" id="errMsgTask">กรุณากรอกภาระงาน</span>
-        </div>
+        </div>   
     </form>
     <button type="button" class="btn btn-primary" style="background-color: #0417CD; width: 100%;" id="saveData">บันทึกข้อมูล</button>
   </div>
@@ -114,16 +117,54 @@
       </div>
       <!-- /.container -->
   </footer>
-          
+
+
+    <!-- Modal Export Excel-->
+    <div class="modal fade" id="exportExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Export Excel</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <div class="form-group">
+                        <label for="selExport">วันที่</label>
+                        <select class="form-control" id="selExport">
+                            <option></option>                           
+                        </select>
+                        <span style="color: red;" id="errMsgExport">กรุณาเลือกวันที่</span>
+                        <script type="text/javascript">
+                            $("#selExport").select2({
+                                allowClear: true,
+                                placeholder: 'กรุณาเลือกวันที่',
+                                width: '100%',
+                                dropdownParent: $('#exportExcel')
+                            });
+                        </script>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                <button type="button" class="btn btn-primary" id="btnExport">Export</button>
+            </div>
+            </div>
+        </div>
+    </div>      
+
   <!-- Bootstrap core JavaScript -->
   <!-- <script src="../Extensions/vendor/jquery/jquery.min.js"></script> -->
   <script src="../Extensions/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  
 </body>
+
+
+
 <script type="text/javascript">
 
     var isTouch = null;
-
     $(document).ready(function() {
         if(sessionStorage.getItem("UserName") == null && sessionStorage.getItem("PassWord") == null){
             window.location = "../index.php";
@@ -132,7 +173,47 @@
             $('#taskContrainer').css('display','none');
             $('#errMsgUser').css('display','none');   
             $('#errMsgTask').css('display','none'); 
+            $('#errMsgExport').css('display','none');
+            GetExportDate();
         }               
+    });
+
+    
+
+    function GetExportDate(){
+        $.ajax({
+            url:"../../TimeSheet/Api/TimeSheet/GetExportDate", 
+            type: "GET",
+            dataType: "json",
+            success:function(result){                       
+                if (result.Status == 'ok'){     
+                    if(result.Sel2List == null) {return;}
+                    $.each(result.Sel2List,function(key,value){
+                        $('#selExport').append($('<option></option>').attr("value",value["Sel2Vale"]).text(value["Sel2Vale"]))
+                    });
+                }
+                else{
+                    swal({
+                        title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้าที่",
+                        type: "warning",
+                        showConfirmButton: true,
+                        confirmButtonText: "ตกลง",
+                        confirmButtonColor: "red"
+                    },
+                    function(isConfirm) {
+                        GoToIndex();
+                    });
+                }
+            }
+        });
+    }
+
+    $('#exportExcel').on('shown.bs.modal', function (e) {
+        $('#errMsgExport').css('display','none');
+    });
+
+    $('#selExport').change(function() {
+        $('#errMsgExport').css('display','none');
     });
 
     $('#logOut').click(function() {
@@ -186,11 +267,14 @@
                             $("body").css("cursor", "default");
                             $('#saveData').css("cursor", "pointer");
                             swal({
-                                title: "ไม่สามารถบันทึกข้อมูลได้",
+                                title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้าที่",
                                 type: "warning",
                                 showConfirmButton: true,
                                 confirmButtonText: "ตกลง",
                                 confirmButtonColor: "red"
+                            },
+                            function(isConfirm) {
+                                GoToIndex();
                             });
                         }
                     }
@@ -334,6 +418,61 @@
         }
     });
 
+    $('#btnExport').click(function() {
+        if($('#selExport').val() == ''){
+            $('#errMsgExport').css('display','block');
+            return;
+        }
+        else{
+
+            $('#errMsgExport').css('display','none');
+            $("body").css("cursor", "wait");
+            $('#saveData').css("cursor", "wait");
+
+            $.ajax({
+                type: "GET",
+                url: "../../TimeSheet/Api/TimeSheet/Export?strDate="+$('#selExport').val(),
+                dataType: "json",
+                success:function(result){
+                    if (result.Status == 'ok'){
+                        $('#taskContrainer').css('display','none');
+                        $("body").css("cursor", "default");
+                        $('#saveData').css("cursor", "pointer");
+                        swal({
+                            title: "สร้างรายงานสำเร็จ",
+                            type: "success",
+                            showConfirmButton: true,
+                            confirmButtonText: "ตกลง",
+                            confirmButtonColor: "#0417CD"
+                        },             
+                        function(isConfirm) {
+                            Download($('#selExport').val());
+                        });
+                    }    
+                    else{
+                        $("body").css("cursor", "default");
+                        $('#saveData').css("cursor", "pointer");
+                        swal({
+                            title: "เกิดข้อผิดพลาดกรุณาติดต่อเจ้าหน้าที่",
+                            type: "warning",
+                            showConfirmButton: true,
+                            confirmButtonText: "ตกลง",
+                            confirmButtonColor: "red"
+                        },
+                        function(isConfirm) {
+                            GoToIndex();
+                        });
+                    }
+                }
+            });
+
+        }
+    });
+
+    function Download(fileName) {
+        window.location = '../../TimeSheet/TimeSheetExcel/'+fileName+'.xlsx';
+    }
+
     function Onloading(show){
         if (show){
             swal({
@@ -352,6 +491,7 @@
         sessionStorage.clear();
         window.location = "../index.php";
     }
+
 </script>
 
 </html>
