@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,7 +102,7 @@
             </script>
         </div>
         <div class="form-group" id="taskContrainer">
-            <label for="textTask">ภาระงาน</label>
+            <label for="textTask">งานที่ได้รับมอบหมาย / งานที่ปฏิบัติ</label>
             <textarea class="form-control" id="textTask" rows="3"></textarea>
             <span style="color: red;" id="errMsgTask">กรุณากรอกภาระงาน</span>
         </div>   
@@ -182,7 +183,7 @@
 
     function GetExportDate(){
         $.ajax({
-            url:"../../TimeSheet/Api/TimeSheet/GetExportDate", 
+            url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/GetExportDate", 
             type: "GET",
             dataType: "json",
             success:function(result){                       
@@ -243,7 +244,7 @@
                     UserName : '',
                 }
                 $.ajax({
-                    url:"../../TimeSheet/Api/TimeSheet/TimeOut", 
+                    url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeOut", 
                     type: "POST",
                     data: JSON.stringify(ParmJson),
                     dataType: 'json',
@@ -292,7 +293,7 @@
             }
 
             $.ajax({
-                url:"../../TimeSheet/Api/TimeSheet/TimeIn", 
+                url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeIn", 
                 type: "POST",
                 data: JSON.stringify(ParmJson),
                 dataType: 'json',
@@ -347,7 +348,7 @@
 
             $.ajax({
                 type: "GET",
-                url: "../../TimeSheet/Api/TimeSheet/TimeCheck?id="+$(this).val(),
+                url: "http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeCheck?id="+$(this).val(),
                 dataType: "json",
                 success:function(result){
                     if (result.Status == 'ok'&& result.ReturnMsg == 'In'){
@@ -431,7 +432,7 @@
 
             $.ajax({
                 type: "GET",
-                url: "../../TimeSheet/Api/TimeSheet/Export?strDate="+$('#selExport').val(),
+                url: "http://20.188.103.18/TimeSheet/Api/TimeSheet/Export?strDate="+$('#selExport').val(),
                 dataType: "json",
                 success:function(result){
                     if (result.Status == 'ok'){
@@ -470,7 +471,7 @@
     });
 
     function Download(fileName) {
-        window.location = '../../TimeSheet/TimeSheetExcel/'+fileName+'.xlsx';
+        window.location = 'http://20.188.103.18/TimeSheet/TimeSheetExcel/'+fileName+'.xlsx';
     }
 
     function Onloading(show){
