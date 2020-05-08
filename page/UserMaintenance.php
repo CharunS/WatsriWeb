@@ -76,7 +76,7 @@
 
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
-            <a href="../index.php">หน้าแรก</a>
+            <a href="#" id="goToMain">หน้าแรก</a>
         </li>
         <li class="breadcrumb-item active">ลงเวลา เข้า - ออก</li>
         <li class="breadcrumb-item">
@@ -236,6 +236,11 @@
     });
 
     $('#logOut').click(function() {
+        sessionStorage.clear();
+        window.location = "../index.php";
+    });
+
+    $('#goToMain').click(function() {
         sessionStorage.clear();
         window.location = "../index.php";
     });
