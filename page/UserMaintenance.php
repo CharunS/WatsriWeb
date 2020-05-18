@@ -35,6 +35,12 @@
       width: 100%;      
     }
 
+    @media only screen and (max-width: 600px) {
+        .custom-footer {
+            display: none;
+        }
+    }
+
   </style>
 
   <!-- Select 2 -->
@@ -132,7 +138,7 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-dark custom-footer">
       <div class="container">
           <p class="m-0 text-center text-white">Copyright &copy; โรงเรียนวัดศรีสุดาราม ที่อยู่ 54/8 ซอยวัดศรีสุดาราม แขวงบางขุนนนท์ เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.0-2424-0424</p>
       </div>
@@ -203,7 +209,8 @@
 
     function GetExportDate(){
         $.ajax({
-            url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/GetExportDate", 
+            //url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/GetExportDate",
+            url:"../../TimeSheet/Api/TimeSheet/GetExportDate", 
             type: "GET",
             dataType: "json",
             success:function(result){                       
@@ -255,7 +262,8 @@
         }
 
         if($('#textTask').is(":visible")){
-            if($('#textTask').val() == ''){
+            if($('#textTask').val().trim().length  == 0){
+                $('#textTask').val('');
                 $('#errMsgTask').css('display','block');
                 $('#textTask').focus();
                 return;
@@ -269,7 +277,8 @@
                     UserName : '',
                 }
                 $.ajax({
-                    url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeOut", 
+                    //url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeOut", 
+                    url:"../../TimeSheet/Api/TimeSheet/TimeOut",
                     type: "POST",
                     data: JSON.stringify(ParmJson),
                     dataType: 'json',
@@ -318,7 +327,8 @@
             }
 
             $.ajax({
-                url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeIn", 
+                //url:"http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeIn", 
+                url:"../../TimeSheet/Api/TimeSheet/TimeIn",
                 type: "POST",
                 data: JSON.stringify(ParmJson),
                 dataType: 'json',
@@ -373,7 +383,8 @@
 
             $.ajax({
                 type: "GET",
-                url: "http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeCheck?id="+$(this).val(),
+                //url: "http://20.188.103.18/TimeSheet/Api/TimeSheet/TimeCheck?id="+$(this).val(),
+                url: "../../TimeSheet/Api/TimeSheet/TimeCheck?id="+$(this).val(),
                 dataType: "json",
                 success:function(result){
                     if (result.Status == 'ok'&& result.ReturnMsg == 'In'){
@@ -434,7 +445,7 @@
             }
         }
         
-        if($(this).val() == ''){
+        if($(this).val().trim().length == 0){
             if(isTouch){
                 $('#errMsgTask').css('display','block');
             }
@@ -457,7 +468,8 @@
 
             $.ajax({
                 type: "GET",
-                url: "http://20.188.103.18/TimeSheet/Api/TimeSheet/Export?strDate="+$('#selExport').val(),
+                //url: "http://20.188.103.18/TimeSheet/Api/TimeSheet/Export?strDate="+$('#selExport').val(),
+                url: "../../TimeSheet/Api/TimeSheet/Export?strDate="+$('#selExport').val(),
                 dataType: "json",
                 success:function(result){
                     if (result.Status == 'ok'){
@@ -496,7 +508,8 @@
     });
 
     function Download(fileName) {
-        window.location = 'http://20.188.103.18/TimeSheet/TimeSheetExcel/'+fileName+'.xlsx';
+        //window.location = 'http://20.188.103.18/TimeSheet/TimeSheetExcel/'+fileName+'.xlsx';
+        window.location = '../../TimeSheet/TimeSheetExcel/'+fileName+'.xlsx';
     }
 
     function Onloading(show){
