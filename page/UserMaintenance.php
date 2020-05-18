@@ -95,8 +95,6 @@
             <label for="exampleFormControlSelect1">บุคลากร</label>
             <select class="form-control" id="selUser">
                 <option></option>
-
-
                 <option value="001">นายเอกศักดิ์ อินทนะ</option>
                 <option value="002">นางกาญจนา รื่นอารมย์</option>
                 <option value="003">นางลัลน์ลิตา วีราภรณ์</option>
