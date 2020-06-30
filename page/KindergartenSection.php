@@ -32,7 +32,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
           <!-- <a class="navbar-brand" href="#">โรงเรียนวัดศรีสุดาราม</a> -->
-          <img src="../Img/logo.png" width="5%" height="5%">
+          <img src="../Img/logo.png" width="5%" height="5%" class="logo-custom">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>

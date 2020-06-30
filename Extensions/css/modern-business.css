@@ -20,3 +20,10 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+@media(max-width: 600px) {
+  .logo-custom{
+    height: 10%;
+    width: 10%;
+  }
+}
