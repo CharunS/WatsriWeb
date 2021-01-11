@@ -115,7 +115,7 @@
                 <!-- <option value="018">นายนรินทร์ นาทิพย์</option> -->
                 <!-- <option value="019">นายกิตติโชค พิมพิรา</option> -->
                 <!-- <option value="020">นางสาวศุภรัตน์ ชุมทอง</option> -->
-                <option value="018">นายวชิราวุธ สุพัง</option>
+                <option value="021">นายวชิราวุธ สุพัง</option>
             </select>
             <span style="color: red;" id="errMsgUser">กรุณาเลือกบุคลากร</span>
             <script type="text/javascript">
