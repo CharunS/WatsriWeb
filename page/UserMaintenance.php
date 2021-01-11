@@ -105,16 +105,17 @@
                 <option value="008">นางสาวสิตางค์ สอนปิงคำ</option>
                 <option value="009">นางสาววิภารัตน์ เหลื่อมทองหลาง</option>
                 <option value="010">นางสาวธิดาทิพย์ ทุมวัน</option>
-                <option value="011">นางสาวทิวาภรณ์ อักษรพิมพ์</option>
+                <!-- <option value="011">นางสาวทิวาภรณ์ อักษรพิมพ์</option> -->
                 <option value="012">นางสาวภัทร์ฐิตา จะรา</option>
                 <option value="013">นางสาวเสาวลักษณ์ ดาบบัง</option>
                 <option value="014">นางสาวปวีณา เขตรสาลี</option>
                 <option value="015">นางสาวกัญญาณัช มีมังคละ</option>
                 <option value="016">นางวันเพ็ญ ลำจวนจิตร</option> 
                 <option value="017">นางนงนภัส พิริยะกุลศิลก</option>
-                <option value="018">นายนรินทร์ นาทิพย์</option>
-                <option value="019">นายกิตติโชค พิมพิรา</option>
-                <option value="020">นางสาวศุภรัตน์ ชุมทอง</option>
+                <!-- <option value="018">นายนรินทร์ นาทิพย์</option> -->
+                <!-- <option value="019">นายกิตติโชค พิมพิรา</option> -->
+                <!-- <option value="020">นางสาวศุภรัตน์ ชุมทอง</option> -->
+                <option value="018">นายวชิราวุธ สุพัง</option>
             </select>
             <span style="color: red;" id="errMsgUser">กรุณาเลือกบุคลากร</span>
             <script type="text/javascript">
