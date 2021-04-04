@@ -156,12 +156,12 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="https://forms.gle/8JPcVWkNvbR12NBv7"><img class="card-img-top" src="Img/News/News07.jpg" alt=""></a>
+          <a href="#"><img class="card-img-top" src="Img/News/News07.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="https://forms.gle/8JPcVWkNvbR12NBv7">คลิกที่นี่เพื่อสมัครเรียนออนไลน์</a>
+              <a href="https://forms.gle/8JPcVWkNvbR12NBv7">รับสมัครนักเรียนปีการศึกษา 2564</a>
             </h4>
-            <p class="card-text">นักเรียนสามารถยื่นความประสงค์ในการมัครเข้าเรียนประจำปีการศึกษา 2563 ผู้ปกครองสามารถนำหลักฐานการสมัครมายื่นในภายหลังได้ในวันเปิดภาคเรียน</p>
+            <p class="card-text">นักเรียนสามารถยื่นความประสงค์ในการมัครเข้าเรียนประจำปีการศึกษา 2564 ไม่เว้นวันหยุดราชการ</p>
           </div>
         </div>
       </div>

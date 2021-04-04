@@ -110,26 +110,6 @@
       
     </div>
 
-    <div class="row">
-
-      <div class="col-lg-4 col-sm-4 portfolio-item">
-      </div>
-      <div class="col-lg-4 col-sm-4 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="../Img/Thivapon.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">นางสาวทิวาภรณ์ อักษรพิมพ์</a>
-            </h4>
-            <p class="card-text">ครู รับเงินเดือนอันดับ ครูผู้ช่วย</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-4 portfolio-item">
-      </div>
-      
-    </div>
-
   </div>
   <!-- /.container -->
 
