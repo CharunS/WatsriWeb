@@ -94,7 +94,7 @@
           </div>
         </div>
         <!-- Slide 2 - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('Img/IndexSlide/2.jpg')">
+        <div class="carousel-item" style="background-image: url('Img/IndexSlide/2.png')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
