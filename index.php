@@ -37,40 +37,48 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">หน้าแรก</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    เกี่ยวกับโรงเรียน
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">หน้าแรก</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      เกี่ยวกับโรงเรียน
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                      <a class="dropdown-item" href="page/History.php">ประวัติโรงเรียน</a>
+                      <a class="dropdown-item" href="page/ShcoolLogo.php">สัญลักษณ์โรงเรียน</a>
+                      <a class="dropdown-item" href="page/Vision.php">วิสัยทัศน์ / ปรัชญา</a>
+                      <a class="dropdown-item" href="page/Mission.php">พันธกิจ / เป้าหมาย</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      บุคลากร
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                      <a class="dropdown-item" href="page/Staff.php">คณะผู้บริหารและบุคลากร</a>
+                      <a class="dropdown-item" href="page/LearningAreaofThaiLanguage.php">กลุ่มสาระฯภาษาไทย</a>
+                      <a class="dropdown-item" href="page/LearningAreaofMathematics.php">กลุ่มสาระฯคณิตศาสตร์</a>
+                      <a class="dropdown-item" href="page/LearningAreaofScience.php">กลุ่มสาระฯวิทยาศาสตร์</a>
+                      <a class="dropdown-item" href="page/LearningAreaofSocialStudies.php">กลุ่มสาระฯสังคมศึกษาฯ</a>
+                      <a class="dropdown-item" href="page/LearningAreaofHealthandPhysicalEducation.php">กลุ่มสาระฯสุขศึกษาฯ</a>
+                      <a class="dropdown-item" href="page/LearningAreaofArts.php">กลุ่มสาระฯศิลปะ</a>
+                      <a class="dropdown-item" href="page/LearningAreaofOccupationsandTechnology.php">กลุ่มสาระฯการงานอาชีพฯ</a>
+                      <a class="dropdown-item" href="page/LearningAreaofForeignLanguages.php">กลุ่มสาระฯภาษาต่างประเทศ</a>
+                      <a class="dropdown-item" href="page/KindergartenSection.php">ปฐมวัย</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="page/Calendar.php">ปฏิทินกิจกรรม</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCAI" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      สื่อการสอน Online
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                    <a class="dropdown-item" href="page/History.php">ประวัติโรงเรียน</a>
-                    <a class="dropdown-item" href="page/ShcoolLogo.php">สัญลักษณ์โรงเรียน</a>
-                    <a class="dropdown-item" href="page/Vision.php">วิสัยทัศน์ / ปรัชญา</a>
-                    <a class="dropdown-item" href="page/Mission.php">พันธกิจ / เป้าหมาย</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownCAI">
+                      <a class="dropdown-item" href="page/CAI/ComputerCIA.php">วิชาคอมพิวเตอร์</a>
                     </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    บุคลากร
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                    <a class="dropdown-item" href="page/Staff.php">คณะผู้บริหารและบุคลากร</a>
-                    <a class="dropdown-item" href="page/LearningAreaofThaiLanguage.php">กลุ่มสาระฯภาษาไทย</a>
-                    <a class="dropdown-item" href="page/LearningAreaofMathematics.php">กลุ่มสาระฯคณิตศาสตร์</a>
-                    <a class="dropdown-item" href="page/LearningAreaofScience.php">กลุ่มสาระฯวิทยาศาสตร์</a>
-                    <a class="dropdown-item" href="page/LearningAreaofSocialStudies.php">กลุ่มสาระฯสังคมศึกษาฯ</a>
-                    <a class="dropdown-item" href="page/LearningAreaofHealthandPhysicalEducation.php">กลุ่มสาระฯสุขศึกษาฯ</a>
-                    <a class="dropdown-item" href="page/LearningAreaofArts.php">กลุ่มสาระฯศิลปะ</a>
-                    <a class="dropdown-item" href="page/LearningAreaofOccupationsandTechnology.php">กลุ่มสาระฯการงานอาชีพฯ</a>
-                    <a class="dropdown-item" href="page/LearningAreaofForeignLanguages.php">กลุ่มสาระฯภาษาต่างประเทศ</a>
-                    <a class="dropdown-item" href="page/KindergartenSection.php">ปฐมวัย</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page/Calendar.php">ปฏิทินกิจกรรม</a>
-                </li>
+                  </li>
                 </ul>
             </div>
         </div>
